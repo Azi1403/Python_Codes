@@ -43,3 +43,14 @@ print(sorted(people)) #sort alphabet
 print(sorted(scores,reverse=True))
 
 print(len(scores))
+
+text=input("enter favorite text:")
+print(text.split())
+
+names = ['peter-george-mary-jack']
+names_list=names.split("-")
+print(names_list)
+
+numbers = ['12','13','45']
+int_n = list(map(int,numbers))
+print(int_n)
