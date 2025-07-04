@@ -9,6 +9,9 @@ information = ['sara','hatami',33,1.64,True,['saman','sasan']]
 print(people[0]) #mehrnaz
 print(people[2]) #mehdi
 print(people[-1]) #matin
+print(people[1:3]) #azam,mehdi
+print(people[::-1])# reverse
+
 
 people.append('ilia')
 print(people)
