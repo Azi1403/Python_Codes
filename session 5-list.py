@@ -40,3 +40,6 @@ print (min(scores))
 print(sorted(scores)) #sort num
 print(sorted(people)) #sort alphabet
 
+print(sorted(scores,reverse=True))
+
+print(len(scores))
