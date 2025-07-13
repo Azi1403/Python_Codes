@@ -15,6 +15,7 @@ response = requests.get(api_url).json()
 cur_doller = response['data'][0]['priceUsd']
 print(f'current Dollar is:  {cur_doller}')
 
+# TypeError: list indices must be integers or slices, not str so because of this error use [0]
 current_price = response['data'][0]['priceUsd']
 
 cost = number_of_bitcoins * float(current_price)
