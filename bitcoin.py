@@ -16,10 +16,17 @@ cur_doller = response['data'][0]['priceUsd']
 print(f'current Dollar is:  {cur_doller}')
 
 # TypeError: list indices must be integers or slices, not str so because of this error use [0]
-current_price = response['data'][0]['priceUsd']
-
+current_price = (response['data'][0]['priceUsd'])
 cost = number_of_bitcoins * float(current_price)
 
 print(f"The cost of {number_of_bitcoins} Bitcoins is ${cost:.2f}")
+
+# i would like print other cel in dic
+print("")
+print("its my test to show me cell of usd price for Bitcoin and Ethereum")
+pp = (response['data'][0]['id'], response['data'][0]['priceUsd'])
+print(pp)
+
+print( response["data"][1]["id"],response['data'][1]["priceUsd"])
 
 
