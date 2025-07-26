@@ -9,4 +9,4 @@ def separator(ls):
 
     print((sorted(zojha),sorted(fardha)))
 
-separator([-3, -2, -1, 0, 1, 2, 3])
+separator([-3, -2, -1, 0, 1, 2, 3]) # in question ask us show it in tople so we input numbers between ()
