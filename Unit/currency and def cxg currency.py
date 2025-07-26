@@ -22,7 +22,8 @@ result_list = soup.find_all("span",attrs={"data-col":"info.last_trade.PDrCotVal"
 price = result_list[0].text
 print(f"cny roz: {price} rial")
 
-
+# define function for currency
+print ("from def euro rate is: ")
 
 def price(currency):
     response = requests.get(f"https://www.tgju.org/profile/price_{currency}")
@@ -32,4 +33,4 @@ def price(currency):
     result_list = soup.find_all("span",attrs={"data-col":"info.last_trade.PDrCotVal"})
     price = result_list[0].text
     return f" {price} rial"
-price('eur')
+print(price('eur'))
